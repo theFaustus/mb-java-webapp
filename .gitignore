@@ -104,8 +104,6 @@ hs_err_pid*
 .idea/misc.xml
 .idea/sonarlint/
 mb-java-webapp.iml
-pom.xml
-src/
 target/
 tomcat.8080/
 .idea/vcs.xml
