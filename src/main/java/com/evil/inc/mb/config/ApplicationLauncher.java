@@ -1,6 +1,6 @@
 package com.evil.inc.mb.config;
 
-import com.evil.inc.mb.servlet.InvoicesServlet;
+import com.evil.inc.mb.servlet.InvoiceServlet;
 import org.apache.catalina.Context;
 import org.apache.catalina.LifecycleException;
 import org.apache.catalina.Wrapper;
@@ -13,7 +13,7 @@ public class ApplicationLauncher {
         tomcat.getConnector();
 
         Context ctx = tomcat.addContext("", null);
-        Wrapper servlet = Tomcat.addServlet(ctx, "com.evil.inc.mb.servlet.HomeServlet", new InvoicesServlet()); //
+        Wrapper servlet = Tomcat.addServlet(ctx, "com.evil.inc.mb.servlet.InvoiceServlet", new InvoiceServlet());
         servlet.setLoadOnStartup(1);
         servlet.addMapping("/*");
 
